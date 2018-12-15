@@ -13,7 +13,7 @@ body {
 .container {
   display: block;
   margin: auto;
-  width: 50%;
+  width: 95%;
 
 }
 
@@ -21,9 +21,9 @@ body {
   border: 10px solid black;
   border-radius: 20%;
   display: inline-block;
-  height: 17rem;
-  margin: 25px;
-  width: 17rem;
+  height: 12rem;
+  margin: 20px;
+  width: 12rem;
 }
 
 .game-over {
