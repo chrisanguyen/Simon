@@ -79,7 +79,7 @@ function startLevel() {
   i = 0;
   gamePattern = []; // reset the buttons
   $("#level-title").text("Level " + level);
-  setTimeout(playLevel(), 500);
+  setTimeout(playLevel(), 200);
 }
 
 function playLevel() {
@@ -88,17 +88,13 @@ function playLevel() {
     var btnNum = Math.floor(Math.random() * 4);
     gamePattern.push(btnNum);
     var btnColor = buttons[btnNum];
-    $("." + btnColor).fadeToggle().fadeToggle();
     playSound(btnColor);
-    setTimeout(playLevel, 500);
+    $("." + btnColor).fadeToggle().fadeToggle();
+    setTimeout(playLevel, 200);
   }
 }
 
 function playSound(soundFile) {
   var mp3 = new Audio("sounds/" + soundFile + ".mp3");
   mp3.play();
-}
-
-function checkAnswer(btnNum) {
-
 }
