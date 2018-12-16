@@ -7,14 +7,13 @@ body {
   color: #FEF2BF;
   font-family: 'Press Start 2P', cursive;
   font-size: 3rem;
-  margin: 2%;
+  margin: 3% auto 2%;
 }
 
 .container {
   display: block;
   margin: auto;
   width: 95%;
-
 }
 
 .btn {
@@ -22,7 +21,7 @@ body {
   border-radius: 20%;
   display: inline-block;
   height: 12rem;
-  margin: 20px;
+  margin: 10px;
   width: 12rem;
 }
 
@@ -63,4 +62,17 @@ footer {
 /* Smartphones ----------- */
 @media (max-width: 760px) {
   .mobile { display: none; }
+
+  .btn {
+    border: 10px solid black;
+    border-radius: 20%;
+    display: inline-block;
+    height: 15rem;
+    margin: 15px;
+    width: 15rem;
+  }
+
+  #level-title {
+    margin-top: 5%;
+  }
 }
