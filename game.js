@@ -90,7 +90,7 @@ function playLevel() {
     var btnColor = buttons[btnNum];
     playSound(btnColor);
     $("." + btnColor).fadeToggle().fadeToggle();
-    setTimeout(playLevel, 200);
+    setTimeout(playLevel, 1000);
   }
 }
 
